@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2015/02/06/613023/c32c9d4b9dfaea68beb2f83191b5fc71.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+#headerTitle {
+  background-color: rgba(0, 0, 0, 0.636);
+  color: #f2efee;
+  margin-bottom: 25px;
+}
+
+#headerTitle h1{
+  font-size: 70px;
+}
+
+.gag{
+  font-size: 11px;
+  position: relative;
+    bottom: 14px;
+}
+
+#lContainer {
+  width: 400px;
+  margin: auto;
+  padding: 36px 48px 48px 48px;
+  background-color: #f2efee;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+#rContainer {
+  width: 400px;
+  margin: auto;
+  padding: 36px 48px 48px 48px;
+  background-color: #f2efee;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+#thing {
+   margin: 150px
+}
+
+
+#lForm .username,
+.password,
+#rForm .username,
+.password,
+.name {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 9px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+#lForm,
+.username,
+.password,
+#rForm,
+.username,
+.password,
+.name:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(253, 242, 233, 0.5);
+}
+
+.formTitle {
+  padding: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.text {
+  margin: 8px;
+}
+
+.loginButton, .registerButton {
+  background-color: #6f9542;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 8px;
+}
+
+#register a {
+  background-color: #fdf2e9;
+  color: #6f9542;
+  align-self: end;
+  padding: 8px;
+}
+
+#goBack a {
+  background-color: #fdf2e9;
+  color: #6f9542;
+  align-self: end;
+  padding: 8px;
+}
+
+#register a,
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 9px;
+  border: none;
+
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+}
+
+#goBack a,
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 9px;
+  border: none;
+
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+}
+
+.loginButton:hover, .registerButton:hover {
+  background-color: #fdf2e9;
+  color: #6f9542;
+}
+
+#register a:hover {
+  background-color: #6f9542;
+  color: #fdf2e9;
+}
+
+#register a,
+button {
+  outline: 1px solid #6f9542;
+}
+
+.error {
+  color: rgb(255, 56, 89);
+  transition: all 0.3s;
+}
+
+/* footer{
+  margin-top: 25px;
+  background-color: rgba(0, 0, 0, 0.636);
+  color: #f2efee;
+}
+footer h5{
+  text-align: center;
+} */

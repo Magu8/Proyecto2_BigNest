@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="thing">
+      <div id="rContainer">
+        <div id="registrationForm">
+          <h2 class="formTitle">Register your profile</h2>
+          <p class="error"></p>
+          <form
+            action="http://localhost:3000/auth/register"
+            method="post"
+            id="rForm"
+          >
+            <input
+              type="text"
+              class="name"
+              name="name"
+              placeholder="insert your name"
+            />
+            <input
+              type="text"
+              class="username"
+              name="username"
+              placeholder="insert your username"
+            />
+            <input
+              type="password"
+              class="password"
+              name="password"
+              placeholder="insert your password"
+            />
+            <button class="btn registerButton" type="submit" value="Register">
+              Register
+            </button>
+          </form>
+        </div>
+        <div id="goBack">
+          <a href="loginPage.html" class="return">Go back</a>
+        </div>
+      </div>
+    </div>
+    <script src="registerPage.js"></script>
+    <!-- <footer>
+        <h5>Made by Magu</h5>
+      </footer> -->
+  </body>
+</html>

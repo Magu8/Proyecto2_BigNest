@@ -1,0 +1,309 @@
+#mainDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+* {
+  box-sizing: border-box;
+}
+
+#welcoming {
+  background-color: white;
+  display: block;
+  padding: 0 70px;
+  font-size: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url("https://1.bp.blogspot.com/-1gRh9RtARkw/WsbVkOuauDI/AAAAAAAAATo/vsPhpOFRi5U9vnIovRHvi9VKRf52JBVYQCLcBGAs/s1600/120_%25E7%259C%258B%25E5%259B%25BE%25E7%258E%258B.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  display: grid;
+  place-items: center;
+}
+#thing {
+  margin: 20px;
+}
+#aContainer {
+  width: 400px;
+  margin: auto;
+  padding: 36px 48px 48px 48px;
+  background-color: #f2efee;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+#aForm .image,
+.name,
+.specie,
+.sex,
+.age,
+.nature {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 9px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+#aForm .image,
+.name,
+.specie,
+.sex,
+.age,
+.nature:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(253, 242, 233, 0.5);
+}
+
+.formTitle {
+  padding: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.submitButton {
+  background-color: #fdf2e9;
+  color: #6f9542;
+  align-self: end;
+  padding: 8px;
+}
+
+.botn,
+.botn:link,
+.botn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 9px;
+  border: none;
+
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #6f9542;
+  color: #fdf2e9;
+}
+
+.animalInfo {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+  margin: 30px;
+  width: 100%;
+  text-align: center;
+  color: black;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 500px;
+  max-height: 497px;
+  border: 2px solid #000;
+}
+
+#options {
+  margin: auto;
+  padding: 20px;
+  background-color: #f2efee;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  display: flex;
+}
+
+#options a,
+#mainDiv .adoptBtn,
+.deleteBtn {
+  margin: 0 40px;
+  color: #6f9542;
+  align-self: end;
+  padding: 8px;
+}
+
+#options a,
+#btn,
+#btn:link,
+#btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 9px;
+  border: none;
+
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+}
+
+#mainDiv .adoptBtn,
+.adoptBtn:link,
+.adoptBtn:hover {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 9px;
+
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+}
+
+#mainDiv .deleteBtn,
+.deleteBtn:link,
+.deleteBtn:hover {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 9px;
+
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+}
+
+#options a:hover {
+  background-color: #6f9542;
+  color: #fdf2e9;
+}
+
+#mainDiv .adoptBtn:hover,
+.delteBtn:hover {
+  background-color: #6f9542;
+  color: #fdf2e9;
+}
+
+.active {
+  background-color: #d4fea1;
+}
+
+#logOutBtn {
+  background-color: #6f9542;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 8px;
+}
+
+#logOutBtn:hover {
+  background-color: #fdf2e9;
+  color: #6f9542;
+}
+
+.animalInfo h3 {
+  color: black;
+  font-size: 30px;
+  border-bottom: 2px solid black;
+}
+
+.error {
+  color: rgb(255, 56, 89);
+  transition: all 0.3s;
+}
+
+/* MODAL */
+
+#adoptedAlert,
+#deleteAlert {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 30px;
+}
+
+.alert,
+.question,
+.aclaration {
+  text-align: center;
+  font-size: 40px;
+}
+.imgDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.imgDiv img {
+  border: #f2efee;
+  border-radius: 100px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(34, 145, 52);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.yesNo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+.yesNo button {
+  font-size: 40px;
+}
+
+.yesBtn, .noBtn {
+  background-color: #fdf2e9;
+  color: #6f9542;
+  align-self: end;
+  padding: 8px;
+}
+
+.yesBtn:hover, .noBtn:hover {
+  background-color: #6f9542;
+  color: #fdf2e9;
+}

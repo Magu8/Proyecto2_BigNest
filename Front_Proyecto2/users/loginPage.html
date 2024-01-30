@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to BigNest</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="headerTitle">
+      <h3 id="intro">Welcome to</h3>
+      <h1 id="title">BigNest</h1>
+      <p class="gag">Get it? Because I've used Nest in order to manage the data at Back-end</p>
+      <p class="text">
+        The website where anyone can put into adoption and even adopt, literally, ANYTHING that can be considered an animal. Kinda. Just... make sure you're putting into adoption something you can call animal, pretty please.
+      </p>
+    </div>
+    <div id="lContainer">
+      <div id="insertUsername">
+        <h2 class="formTitle">Log in</h2>
+        <p class="text">
+          In order to use our services, you must log into your account.
+        </p>
+        <p class="error"></p>
+        <form
+          action="http://localhost:3000/auth/login"
+          method="post"
+          id="lForm"
+        >
+          <input
+            class="username"
+            type="text"
+            name="username"
+            placeholder="Username"
+          />
+          <input
+            class="password"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
+          <button class="btn loginButton" type="submit" value="Login">
+            Log in
+          </button>
+        </form>
+      </div>
+      <div id="register">
+        <h4 class="text">
+          No account yet? That can't be possible... Create yours below!
+        </h4>
+        <a href="./registerPage.html" class="registerBtn">Register</a>
+      </div>
+    </div>
+    <script src="loginPage.js"></script>
+  </body>
+
+</html>
+
